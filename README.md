@@ -2,6 +2,9 @@
 
 # PHP-Proxy-Docker
 
+## Env
+1. Add TZ
+
 
 ## Dockerfile (Build the image yourself)
 
