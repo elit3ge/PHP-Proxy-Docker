@@ -1,4 +1,4 @@
-![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/dwaaan/php-proxy.svg) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/dwaaan/php-proxy.svg) ![Docker Pulls](https://img.shields.io/docker/pulls/dwaaan/php-proxy.svg)[![](https://images.microbadger.com/badges/image/dwaaan/php-proxy.svg)](https://microbadger.com/images/dwaaan/php-proxy ) [![](https://images.microbadger.com/badges/version/dwaaan/php-proxy.svg)](https://microbadger.com/images/dwaaan/php-proxy )
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/elit3ge/php-proxy-docker.svg) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/elit3ge/php-proxy-docker.svg) ![Docker Pulls](https://img.shields.io/docker/pulls/elit3ge/php-proxy-docker.svg)[![](https://images.microbadger.com/badges/image/elit3ge/php-proxy-docker.svg)](https://microbadger.com/images/elit3ge/php-proxy-docker ) [![](https://images.microbadger.com/badges/version/elit3ge/php-proxy-docker.svg)](https://microbadger.com/images/elit3ge/php-proxy-docker )
 
 # PHP-Proxy-Docker
 
