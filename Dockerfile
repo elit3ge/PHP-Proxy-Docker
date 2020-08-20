@@ -6,7 +6,7 @@ EXPOSE 80
 EXPOSE 443
 
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y apache2 php php-dom php-curl curl composer zip unzip && rm -rf /var/lib/apt/lists/*
+RUN apt-get install -y nano apache2 php php-dom php-curl curl composer zip unzip && rm -rf /var/lib/apt/lists/*
 ENV APACHE_RUN_USER  www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR   /var/log/apache2
