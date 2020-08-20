@@ -21,7 +21,7 @@ RUN mkdir -p $APACHE_LOCK_DIR
 RUN mkdir -p $APACHE_LOG_DIR
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
 
-#RUN rm -rf /var/www/html/*
+RUN rm -rf /var/www/html/*
 VOLUME /var/www/html/
 RUN composer create-project athlon1600/php-proxy-app:dev-master /var/www/html
 RUN chown -R www-data:www-data /var/www/html
