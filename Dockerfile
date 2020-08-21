@@ -4,7 +4,7 @@ ENV TZ=Australia/Sydney
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 EXPOSE 80
 EXPOSE 443
-VOLUME /var/www/html/
+#VOLUME /var/www/html/
 
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y nano apache2 php php-dom php-curl curl composer zip unzip && rm -rf /var/lib/apt/lists/*
@@ -24,4 +24,4 @@ CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
 
 RUN rm -rf /var/www/html/*
 RUN composer create-project athlon1600/php-proxy-app:dev-master /var/www/html
-#RUN chown -R www-data:www-data /var/www/html
+RUN chown -R www-data:www-data /var/www/html
