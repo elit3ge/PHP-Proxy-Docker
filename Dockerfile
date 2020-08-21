@@ -20,10 +20,10 @@ RUN a2ensite default-ssl.conf
 RUN mkdir -p $APACHE_RUN_DIR
 RUN mkdir -p $APACHE_LOCK_DIR
 RUN mkdir -p $APACHE_LOG_DIR
-CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/apache2", "-D", "FOREGROUND", "php", "-f", "/var/www/html/setup.txt"]
 
 ADD php /var/www/html
-CMD ["php", "-f", "/var/www/html/setup.txt"]
+#CMD ["php", "-f", "/var/www/html/setup.txt"]
 
 #RUN rm -rf /var/www/html/*
 #RUN composer create-project athlon1600/php-proxy-app:dev-master /var/www/html
